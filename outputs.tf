@@ -21,3 +21,8 @@ output "resource_id" {
   description = "The resource ID for the resource."
   value       = azurerm_postgresql_flexible_server.this.id
 }
+
+output "fqdn " {
+  description = "The FQDN of the PostgreSQL Flexible Server."
+  value       = azurerm_postgresql_flexible_server.this.fqdn
+}
