@@ -60,9 +60,6 @@ variable "high_availability" {
     mode                      = string
     standby_availability_zone = optional(string)
   })
-  default = {
-    mode = "ZoneRedundant"
-  }
   description = <<-EOT
  - `mode` - (Required) The high availability mode for the PostgreSQL Flexible Server. Possible value are `SameZone` or `ZoneRedundant`.
  - `standby_availability_zone` - (Optional) Specifies the Availability Zone in which the standby Flexible Server should be located.
